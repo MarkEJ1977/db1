@@ -1,0 +1,15 @@
+hbody {background:#ffffff url('http://placekitten.com/200/300') no-repeat right top;}
+
+h1 { color: red;}
+h2 {color: red;}
+h3{ color: red; }
+
+h1 {text-align:center;}
+
+h1 {font-family: "Arial";}
+p {font-family:"Arial";}
+
+a:link {background-color:blue;}
+a:visited {background-color:white;}
+a:hover {background-color:white;}
+a:active {background-color:#FF704D;}

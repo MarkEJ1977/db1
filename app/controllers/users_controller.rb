@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = User.find(params[:id])
   end
 
   def create
@@ -20,7 +21,18 @@ class UsersController < ApplicationController
       redirect_to @user # sends back to show page for that user
    else
       render :new # sends back to new form
-    end
+      end
   end
+
+    def update
+      @user = User.find(params[:id])
+      if @user.update_attributes(params[:user])
+      redirect_to @user # sends back to show page for that user
+   else
+      render :edit # sends back to new form
+      end
+    end
+
+  
 end
 

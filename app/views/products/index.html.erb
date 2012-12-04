@@ -1,6 +1,11 @@
-<h1>Products#index</h1>
-<p>Find me in app/views/products/index.html.erb</p>
+
+<p>This is the Landing Page. It Lists out all Products for the Site.</p> </br>
+<p>Names and categories of books are also provided. </p>
+
+
 <% @products.each do |product| %>
-<%= product.name %><br/> 
-<%= link_to product.name, product %>
+<%= product.name %> </br>
+
+
+<%= link_to product.name, product %> </br>
 <% end  %>

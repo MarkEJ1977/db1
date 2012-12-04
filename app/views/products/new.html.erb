@@ -3,5 +3,9 @@
 <%= form_for @product do |f| %> 
 <%= f.label :name %>
 <%= f.text_field :name %>
+<%= f.label :category %>
+<%= f.text_field :category %>
+<%= f.label :link %>
+<%= f.text_field :link %>
 <%= f.submit "Create Product" %>
 <% end %>
